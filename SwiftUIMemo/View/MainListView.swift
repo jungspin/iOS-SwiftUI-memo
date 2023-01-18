@@ -20,6 +20,7 @@ struct MainListView: View {
                 } label: {
                     MemoCell(memo: memo)
                 }
+
             }
             .listStyle(.plain)
             .navigationTitle("My Memo") // .blar call as modifier
