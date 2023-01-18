@@ -15,7 +15,11 @@ struct MainListView: View {
     var body: some View {
         NavigationView {
             List(store.list) { memo in
-                MemoCell(memo: memo)
+                NavigationLink{
+                    DetailView(memo: memo)
+                } label: {
+                    MemoCell(memo: memo)
+                }
             }
             .listStyle(.plain)
             .navigationTitle("My Memo") // .blar call as modifier
@@ -26,7 +30,7 @@ struct MainListView: View {
                     Image(systemName: "plus")
                 }
             }
-            .sheet(isPresented: $showComposer) {
+            .sheet(isPresented: $showComposer) { // 모달
                 ComposeView()
             }
         }
