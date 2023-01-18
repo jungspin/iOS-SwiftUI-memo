@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct MainListView: View {
+    @EnvironmentObject var store: MemoStore
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(store.list) { memo in
+                VStack (alignment: .leading) {
+                    Text(memo.content)
+                        .font(.body)
+                        .lineLimit(1)
+                    
+                    Text(memo.insertDate, style: .date)
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("My Memo") // .blar call as modifier
+        }
     }
 }
 
 struct MainListView_Previews: PreviewProvider {
     static var previews: some View {
+        // preview에서 사용할 공유데이터로 따로 등록해야함
         MainListView()
+            .environmentObject(MemoStore())
     }
 }

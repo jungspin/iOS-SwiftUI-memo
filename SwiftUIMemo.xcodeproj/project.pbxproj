@@ -63,10 +63,10 @@
 				E90059732977BDF5006B771E /* Memory */,
 				E90059722977BDDC006B771E /* CoreData */,
 				E900595C2977BC96006B771E /* SwiftUIMemoApp.swift */,
+				E90059702977BDAD006B771E /* MainListView.swift */,
 				E90059652977BC97006B771E /* Assets.xcassets */,
 				E90059672977BC97006B771E /* SwiftUIMemo.entitlements */,
 				E90059682977BC97006B771E /* Preview Content */,
-				E90059702977BDAD006B771E /* MainListView.swift */,
 			);
 			path = SwiftUIMemo;
 			sourceTree = "<group>";
