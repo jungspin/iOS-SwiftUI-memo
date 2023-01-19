@@ -18,6 +18,10 @@
 		E900597A2977C8FE006B771E /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90059792977C8FE006B771E /* MemoCell.swift */; };
 		E900597C2977C966006B771E /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900597B2977C966006B771E /* ComposeView.swift */; };
 		E900597E2977D0DE006B771E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900597D2977D0DE006B771E /* DetailView.swift */; };
+		E900598129796ADC006B771E /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900598029796ADC006B771E /* RequestAPI.swift */; };
+		E900598329797393006B771E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900598229797393006B771E /* Post.swift */; };
+		E900598B29797B50006B771E /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900598A29797B50006B771E /* PostListView.swift */; };
+		E900598D29797F23006B771E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900598C29797F23006B771E /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		E90059792977C8FE006B771E /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		E900597B2977C966006B771E /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
 		E900597D2977D0DE006B771E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E900598029796ADC006B771E /* RequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
+		E900598229797393006B771E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E900598A29797B50006B771E /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		E900598C29797F23006B771E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		E900595B2977BC96006B771E /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				E900597F29796AC3006B771E /* Util */,
 				E90059782977C8ED006B771E /* View */,
 				E90059732977BDF5006B771E /* Memory */,
 				E90059722977BDDC006B771E /* CoreData */,
@@ -99,6 +108,7 @@
 			children = (
 				E90059742977C10D006B771E /* Memo.swift */,
 				E90059762977C24B006B771E /* MemoStore.swift */,
+				E900598229797393006B771E /* Post.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -110,8 +120,18 @@
 				E90059792977C8FE006B771E /* MemoCell.swift */,
 				E900597B2977C966006B771E /* ComposeView.swift */,
 				E900597D2977D0DE006B771E /* DetailView.swift */,
+				E900598A29797B50006B771E /* PostListView.swift */,
+				E900598C29797F23006B771E /* PostCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E900597F29796AC3006B771E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E900598029796ADC006B771E /* RequestAPI.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,13 +205,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E900597A2977C8FE006B771E /* MemoCell.swift in Sources */,
+				E900598329797393006B771E /* Post.swift in Sources */,
 				E900597E2977D0DE006B771E /* DetailView.swift in Sources */,
 				E90059622977BC96006B771E /* SwiftUIMemo.xcdatamodeld in Sources */,
 				E90059772977C24B006B771E /* MemoStore.swift in Sources */,
+				E900598B29797B50006B771E /* PostListView.swift in Sources */,
 				E90059712977BDAD006B771E /* MainListView.swift in Sources */,
+				E900598D29797F23006B771E /* PostCell.swift in Sources */,
 				E900595D2977BC96006B771E /* SwiftUIMemoApp.swift in Sources */,
 				E900597C2977C966006B771E /* ComposeView.swift in Sources */,
 				E900595F2977BC96006B771E /* Persistence.swift in Sources */,
+				E900598129796ADC006B771E /* RequestAPI.swift in Sources */,
 				E90059752977C10D006B771E /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

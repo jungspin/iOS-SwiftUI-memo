@@ -35,6 +35,7 @@ class MemoStore: ObservableObject {
     }
     
     func delete(memo: Memo){
+        print("method is called")
         list.removeAll { $0.id == memo.id }
     }
     

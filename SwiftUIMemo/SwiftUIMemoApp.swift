@@ -14,7 +14,7 @@ struct SwiftUIMemoApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainListView()
+            PostListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(store) // mainListView, 이어지는 뷰에서도 동일한 객체를 쉽게 사용 가능
         }
